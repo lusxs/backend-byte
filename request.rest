@@ -1,0 +1,32 @@
+GET http://localhost:6000/mahesas
+
+###
+GET http://localhost:6000/mahesa/1
+
+
+###
+POST http://localhost:6000/mahesa
+Content-Type: application/json
+
+
+{
+    "nama": "Danau Tondano",
+    "lokasi": "Kabupaten Minahasa",
+    "image": "https://freeimage.host/i/HnhyoCB",
+    "desk" : "Danau Tondano adalah danau terluas di Provinsi Sulawesi Utara, Indonesia. Danau ini diapit oleh Pegunungan Lembean, Gunung Kaweng, Bukit Tampusu, dan Gunung Masarang.  Danau ini memiliki ketinggian 600 mdpl. Luasnya sekitar 4.278 hektare.
+Danau Tondano juga dikenal akan legenda-legenda dan cerita kuno yang sudah hidup selama ratusan tahun."
+}
+
+###
+PATCH http://localhost:6000/mahesa/2
+Content-Type: application/json
+
+{
+    "nama": "Benteng Moraya",
+    "lokasi": "Tuutu-Tondano Utara",
+    "image": "https://freeimage.host/i/HnhbQ6X",
+    "desk" : "Tempat wisata budaya yang berada di jantung minahasa"
+}
+
+###
+DELETE http://localhost:6000/mahesa/1
