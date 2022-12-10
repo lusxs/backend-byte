@@ -1,7 +1,7 @@
 GET http://localhost:6000/mahesas
 
 ###
-GET http://localhost:6000/mahesa/1
+GET http://localhost:6000/mahesa/2
 
 
 ###
