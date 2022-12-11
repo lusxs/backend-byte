@@ -17,7 +17,3 @@ const Mahesa = db.define(
 );
 
 export default Mahesa;
-
-(async () => {
-    await db.sync();
-})();
