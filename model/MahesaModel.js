@@ -3,12 +3,12 @@ import db from '../config/Database.js';
 
 const { DataTypes } = Sequelize;
 
-const Minaesa = db.define(
+const Mahesa = db.define(
     "wisata",
     {
         nama: DataTypes.STRING,
         lokasi: DataTypes.STRING,
-        image : DataTypes.STRING,
+        image: DataTypes.STRING,
         desk: DataTypes.TEXT,
     },
     {
@@ -16,4 +16,8 @@ const Minaesa = db.define(
     }
 );
 
-export default Minaesa;
+export default Mahesa;
+
+(async () => {
+    await db.sync();
+})();

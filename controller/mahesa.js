@@ -1,17 +1,17 @@
-import Minaesa from "../model/MinaesaModel.js";
+import Mahesa from "../model/MahesaModel.js";
 
-export const getMinaesa = async (req, res) => {
+export const getMahesa = async (req, res) => {
     try {
-        const response = await Minaesa.findAll();
+        const response = await Mahesa.findAll();
         res.status(200).json(response);
     } catch (error) {
         console.log(error.message);
     }
 };
 
-export const getMinaesaById = async (req, res) => {
+export const getMahesaById = async (req, res) => {
     try {
-        const response = await Minaesa.findOne({
+        const response = await Mahesa.findOne({
             where: {
                 id: req.params.id,
             },
@@ -22,36 +22,36 @@ export const getMinaesaById = async (req, res) => {
     }
 };
 
-export const createMinaesa = async (req, res) => {
+export const createMahesa = async (req, res) => {
     try {
-        await Minaesa.create(req.body);
-        res.status(201).json({ msg: "Minaesa Created" });
+        await Mahesa.create(req.body);
+        res.status(201).json({ msg: "Mahesa Created" });
     } catch (error) {
         console.log(error.message);                
     }
 };
 
-export const updateMinaesa = async (req,res) => {
+export const updateMahesa = async (req,res) => {
     try {
-        await Minaesa.update(req.body, {
+        await Mahesa.update(req.body, {
             where: {
                 id: req.params.id,
             },
         });
-        res.status(200).json({ msg: "Minaesa Updated" });
+        res.status(200).json({ msg: "Mahesa Updated" });
     } catch (error) {
         console.log(error.message);                
     }
 };
 
-export const deleteMinaesa = async (req, res) => {
+export const deleteMahesa = async (req, res) => {
     try {
-        await Minaesa.destroy ({
+        await Mahesa.destroy ({
             where: {
                 id: req.params.id,
             },
         });
-        res.status(200).json({ msg: "Minaesa Deleted" });
+        res.status(200).json({ msg: "Mahesa Deleted" });
     } catch (error) {
         console.log(error.message);                
     }
