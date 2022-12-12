@@ -1,11 +1,11 @@
-GET http://localhost:5000/mahesas
+GET http://localhost:5000/minaesa
 
 ###
-GET http://localhost:5000/mahesa/2
+GET http://localhost:5000/minaesa/8
 
 
 ###
-POST http://localhost:5000/mahesa
+POST http://localhost:5000/minaesa
 Content-Type: application/json
 
 

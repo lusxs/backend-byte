@@ -1,8 +1,8 @@
-import Mahesa from "../model/MinaesaModel.js";
+import Minaesa from "../model/MinaesaModel.js";
 
 export const getMinaesa = async (req, res) => {
     try {
-        const response = await Mahesa.findAll();
+        const response = await Minaesa.findAll();
         res.status(200).json(response);
     } catch (error) {
         console.log(error.message);
